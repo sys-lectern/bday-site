@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'gentium_basicregular';
+	src: url(fonts/gentiumbasic-regular-webfont.woff2) format('woff2'),
+		url(fonts/gentiumbasic-regular-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	height: 100%;
+	display: grid;
+}
+
+body {
+	width: 86%;
+	max-width: 42em;
+	padding: 25vh 1em;
+	margin: auto;
+	background: transparent;
+}
+body :last-child {
+	margin-bottom: 0;
+}
+
+html {
+	background-image: url(images/background.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	background-color: black;
+	font-family: 'gentium_basicregular', serif;
+	font-weight: 500;
+	font-size: 3.9vw;
+}
+
+a {
+	color: inherit;
+}
+
+@media (min-width: 800px) and (max-width: 2400px) {
+	html {
+		font-size: 28px;
+	}
+}
+
+@media (min-width: 2401px) {
+	html {
+		font-size: 42px;
+	}
+}
